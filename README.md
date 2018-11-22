@@ -18,15 +18,15 @@ Only the last two (Message Encoding and Transport) are required; the rest are op
 
 The simplest binding definition you can do is te following one: 
 ```xml
-    <bindings>
-      <customBinding>
-        <binding name="CICS_WSAT_Binding">
-          <transactionFlow transactionProtocol="WSAtomicTransactionOctober2004" allowWildcardAction="false" />
-          <textMessageEncoding messageVersion="Soap12" writeEncoding="utf-8" />
-          <httpsTransport />
-        </binding>
-      </customBinding>
-    </bindings>
+<bindings>
+  <customBinding>
+    <binding name="CICS_WSAT_Binding">
+      <transactionFlow transactionProtocol="WSAtomicTransactionOctober2004" allowWildcardAction="false" />
+      <textMessageEncoding messageVersion="Soap12" writeEncoding="utf-8" />
+      <httpsTransport />
+    </binding>
+  </customBinding>
+</bindings>
 ```
 
 ## Cobol part
