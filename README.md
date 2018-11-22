@@ -16,7 +16,7 @@ The culprit is to use a customBinding in place of a standard wsHttpBinding eleme
 
 Only the last two (Message Encoding and Transport) are required; the rest are optional.
 
-The simplest binding definition you can do is te following one: 
+The simplest binding definition you can do is the following one: 
 ```xml
 <bindings>
   <customBinding>
