@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POC_2PC.SW2PC" CodeBehind="SW2PC.svc.cs" %>
