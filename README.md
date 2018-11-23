@@ -29,7 +29,7 @@ The simplest binding definition you can do is the following one:
 </bindings>
 ```
 
-## Cobol part
+## CICS part
 
 ### Cics program highlights
 
