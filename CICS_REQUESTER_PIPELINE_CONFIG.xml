@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requester_pipeline xmlns="http://www.ibm.com/software/htp/cics/pipeline">
+  <service>
+    <service_handler_list>
+    
+      <cics_soap_1.2_handler>
+       <headerprogram>
+        <program_name>DFHWSATH</program_name>
+        <namespace>http://schemas.xmlsoap.org/ws/2004/10/wscoor</namespace>
+        <localname>CoordinationContext</localname>
+        <mandatory>true</mandatory>
+       </headerprogram>
+      </cics_soap_1.2_handler>
+
+<!--  TRACEUR d'IBM (UTHDSR1) DUMP DES CONTAINERS DANS CEEMSG      -->
+      <handler>
+        <program>UTHDSR1</program>
+        <handler_parameter_list/>
+      </handler>
+      
+    </service_handler_list>
+  </service>
+  
+  <service_parameter_list>
+    <registration_service_endpoint>https://cics-prod-sw.mes.reseau.intra:60260/cicswsat/RegistrationService</registration_service_endpoint>
+  </service_parameter_list>
+  
+</requester_pipeline>
